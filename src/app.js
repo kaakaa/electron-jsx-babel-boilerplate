@@ -24,5 +24,6 @@ app.on('ready', () => {
     height: 365
   });
   mainWindow.loadUrl('file://' + __dirname + '/renderer/index.html');
+  mainWindow.webContents.openDevTools();
 });
 
